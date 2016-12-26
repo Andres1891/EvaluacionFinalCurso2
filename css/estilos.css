@@ -1,0 +1,178 @@
+body{
+  background-color: black;
+  margin: 2px 10px;
+  width: 80%;
+  margin-left: 10%;
+  font-family: 'Dancing Script',cursive;
+}
+header{
+  background-color: #5b7989;
+  padding: 10px 30px;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+}
+header h1{
+  text-shadow: 2px 2px 2px #02010a;
+}
+div[class^='titulo']{
+  display:inline-block;
+  width: 50%;
+  padding: 10px 30px;
+  flex: 1 2 100%;
+}
+.titulo2 p{
+  margin-left: 50%;
+  margin-top: 7%;
+  font-size: 1.5em;
+}
+.contenedor2{
+  display: flex;
+  flex-flow: row;
+}
+a{
+  color: white;
+  margin-right: 20px;
+}
+#index{
+  text-decoration: none;
+}
+#imagenCentral{
+  background-color: #82c3a6;
+  padding: 20px 70px;
+}
+#imagenCentral img{
+  width: 100%;
+}
+
+#imagenSecundaria{
+  background-color: #d5c75f;
+  padding: 20px 10px;
+  }
+#imagenSecundaria img{
+  width: 100%;
+  border: 1px solid black;
+}
+div [class*="imagen"]{
+  min-height: 20px;
+  padding: 10px 40px;
+  flex: 0 1 100%;
+}
+
+.contenedor{
+  display: flex;
+  flex-flow: row;
+}
+
+div h2{
+  text-decoration: underline;
+  margin-left: 180px;
+}
+.contenedor,h2{
+  margin: 0;
+}
+img{
+  box-shadow: 2px 2px 2px #02010a;
+}
+.imagen1 img{
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px #02010a;
+  transform-origin: rotate;
+  transition-duration: 1s;
+}
+.imagen1 img:hover{
+  border: 2px solid #82c3a6;
+  box-shadow: 2px 2px 2px #82c3a6;
+  transform: rotate(10deg);
+}
+.imagen2 img{
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px #02010a;
+  transform-origin: traslate;
+  transition-duration: 1s;
+}
+.imagen2 img:hover{
+  border: 2px solid #82c3a6;
+  box-shadow: 2px 2px 2px #82c3a6;
+  transform: translate(20px, -5px);
+}
+footer{
+  background-color: #C6d5c5;
+  height: 200px;
+  border-radius: 0px 0px 10px 10px;
+  padding-left: 80px;
+}
+div[class^='caja']{
+  display:inline-block;
+  width: 20%;
+  text-align: left;
+  padding: 10px 20px;
+}
+.caja2{
+  padding-top: 10px;
+}
+.caja3 img{
+  width: 10%;
+}
+.caja4 img{
+  width: 10%;
+}
+.caja1 h1,label{
+  margin-bottom: 25px;
+}
+.caja2 h1,label{
+  margin-bottom: 25px;
+}
+.caja3 h1,label{
+  margin-bottom: 10px;
+}
+.caja4 h1,label{
+  margin-bottom: 20px;
+}
+.contprin div {
+  box-sizing: border-box;
+  max-width: 900px;
+}
+.contprin{
+  width: 100%;
+}
+@media all and (max-width: 900px) {
+	.contenedor2 {
+		width: 100%;
+    text-align: center;
+		order: 1;
+	}
+  .titulo2 p{
+    margin-left: 10%;
+    text-align: center;
+
+  }
+  section #imagenCentral img{
+    width: 100%;
+    order: 2;
+    padding: 20px 80px;
+  }
+  div h2{
+    margin-left: 45%;
+  }
+
+	.imagen1 {
+		width: 100%;
+		order: 3;
+	}
+.imagen2 {
+  width: 100%;
+  order: 4;
+}
+.contenedor,.contenedor2{
+  display: flex;
+  flex-flow: wrap;
+}
+
+footer{
+  height: auto;
+}
+div[class^='caja']{
+  display:inline;
+}
+
+}
