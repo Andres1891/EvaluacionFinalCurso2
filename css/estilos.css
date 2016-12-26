@@ -148,7 +148,7 @@ div[class^='caja']{
 		order: 1;
 	}
   .titulo2 p{
-    margin-left: 10%;
+    margin-left: 0%;
     text-align: center;
 
   }
@@ -158,7 +158,7 @@ div[class^='caja']{
 padding: 20px 50px;
 }
   div h2{
-    margin-left: 45%;
+    margin-left: 40%;
   }
 
 	.imagen1 {
