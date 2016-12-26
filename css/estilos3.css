@@ -29,27 +29,24 @@ div[class^='titulo']{
   display: flex;
   flex-flow: row;
 }
+.bloque1{
+  display: flex;
+  flex-flow: row;
+}
+.bloque2{
+  display: flex;
+  flex-flow: row;
+}
 a{
   color: white;
   margin-right: 20px;
 }
-#index{
+#retratos{
 text-decoration: none;
 }
-#index:visited{
+#retratos:visited{
   text-decoration: underline;
 }
-#paisajes:visited{
-  text-decoration: none;
-}
-#imagenCentral{
-  background-color: #82c3a6;
-  padding: 20px 70px;
-}
-#imagenCentral img{
-  width: 100%;
-}
-
 #imagenSecundaria{
   background-color: #d5c75f;
   padding: 20px 10px;
@@ -59,48 +56,20 @@ text-decoration: none;
   border: 1px solid black;
 }
 div [class*="imagen"]{
-  min-height: 20px;
+  min-height: 80px;
   padding: 10px 40px;
-  flex: 0 1 100%;
+  flex: 2 3 100px;
 }
 
-.contenedor{
+/*.contenedor{
   display: flex;
   flex-flow: row;
-}
+}*/
 
-div h2{
-  text-decoration: underline;
-  margin-left: 180px;
-}
-.contenedor,h2{
-  margin: 0;
-}
 img{
   box-shadow: 2px 2px 2px #02010a;
 }
-.imagen1 img{
-  border: 1px solid black;
-  box-shadow: 2px 2px 2px #02010a;
-  transform-origin: rotate;
-  transition-duration: 1s;
-}
-.imagen1 img:hover{
-  border: 2px solid #82c3a6;
-  box-shadow: 2px 2px 2px #82c3a6;
-  transform: rotate(10deg);
-}
-.imagen2 img{
-  border: 1px solid black;
-  box-shadow: 2px 2px 2px #02010a;
-  transform-origin: traslate;
-  transition-duration: 1s;
-}
-.imagen2 img:hover{
-  border: 2px solid #82c3a6;
-  box-shadow: 2px 2px 2px #82c3a6;
-  transform: translate(20px, -5px);
-}
+
 footer{
   background-color: #C6d5c5;
   height: 200px;
@@ -141,6 +110,17 @@ div[class^='caja']{
 .contprin{
   width: 100%;
 }
+/*----------------------------------------------------------------------------------*/
+.imagen1{
+  filter: blur(10px);
+}
+.imagen2,.imagen4,.imagen6{
+  filter: grayscale(100%);
+}
+.imagen3{
+  filter: sepia(90%);
+}
+/*----------------------------------------------------------------------------------*/
 @media all and (max-width: 900px) {
 	.contenedor2 {
 		width: 100%;
@@ -161,15 +141,7 @@ padding: 20px 50px;
     margin-left: 45%;
   }
 
-	.imagen1 {
-		width: 100%;
-		order: 3;
-	}
-.imagen2 {
-  width: 100%;
-  order: 4;
-}
-.contenedor,.contenedor2{
+.bloque1,.bloque2,.contenedor2{
   display: flex;
   flex-flow: wrap;
 }
@@ -180,6 +152,7 @@ footer{
 div[class^='caja']{
   display:inline;
 }
+
 }
 header{
   animation-duration: 1s;
